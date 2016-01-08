@@ -1,0 +1,24 @@
+#main {
+    width: 700px;
+}
+
+#textareaWrapper {
+    position: relative;
+    height: 250px;
+    clear: both;
+}
+
+#urls_to_remove {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+}
+
+button {
+    font-size: 18px;
+    margin: 20px;
+}
+
+#history {
+    margin-top: 50px;
+}

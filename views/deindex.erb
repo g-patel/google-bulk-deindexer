@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Google Bulk Deindexer</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+  <h1>Google Bulk Deindexer</h1>
+  <p>This tool makes a request to de-index URLs from Google Search temporarily.</p>
+  <div id="main">
+    <form action="" method="post">
+      <h2>URLs to be removed</h2>
+      <p>Please input URLs you wish to de-index from Google, one per line.</p>
+      <div id="textareaWrapper">
+	<textarea id="urls_to_remove" name="urls_to_remove" rows="25" cols="150"></textarea>
+	<div class="progress" id="spinner"><div>Loading…</div></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <% unless @post_message.nil? %>
+    <h3 id="history"><%= @post_message %></h3>
+    <% end %>
+  </div>
+</body>
+</html>
+
+  
