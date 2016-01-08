@@ -73,3 +73,5 @@ rackup
 * You can now access http://localhost:9292/ to access the UI
 * Upon submission, the job will run in background to request deindex, then email to mailto in config.json the result.
 * The processed result will be recorded in data/history.tsv
+
+CAVEAT: you should consider putting some authentication in front of this UI (at least basic auth).
