@@ -58,8 +58,8 @@ ruby deindexer_cmdline.rb rem.txt
 You will get tab-separted result per request, like so:
 
 ```
-2016-01-08 00:21:28	  https://www.example.com/abc	http://www.example.com/abc has been added for removal.
-2016-01-08 00:23:28	  https://www.example.com/xyz	http://www.example.com/xyz has been added for removal.
+2016-01-08 00:21:28	  http://www.example.com/abc	http://www.example.com/abc has been added for removal.
+2016-01-08 00:23:28	  http://www.example.com/xyz	http://www.example.com/xyz has been added for removal.
 ```
 
 ### From UI
@@ -75,3 +75,9 @@ rackup
 * The processed result will be recorded in data/history.tsv
 
 CAVEAT: you should consider putting some authentication in front of this UI (at least basic auth).
+
+INFO: The tool catches you from trying to remove the entire domain with entries like this:
+
+```
+http://www.example.com/
+```
