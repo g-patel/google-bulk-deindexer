@@ -1,7 +1,9 @@
 <html>
 <head>
   <title>Google Bulk Deindexer</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
   <h1>Google Bulk Deindexer</h1>
@@ -12,8 +14,8 @@
       <p>Please input URLs you wish to de-index from Google, one per line.</p>
       <div id="textareaWrapper">
 	<textarea id="urls_to_remove" name="urls_to_remove" rows="25" cols="150"></textarea>
-	<div class="progress" id="spinner"><div>Loading…</div></div>
       </div>
+      <br>
       <button type="submit">Submit</button>
     </form>
     <% unless @post_message.nil? %>
